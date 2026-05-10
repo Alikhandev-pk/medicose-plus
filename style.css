@@ -222,3 +222,21 @@ body { background-color: var(--light); color: var(--dark); overflow-x: hidden; w
 .section-title {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
+
+
+/* Cart Image Size Global Fix */
+#cart-items img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Mobile par layout ko row mein rakhne ke liye */
+#cart-items > div {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 15px !important;
+}
