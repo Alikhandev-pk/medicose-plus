@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics & Beauty | Medicose+ Global Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <i class="fa-solid fa-briefcase-medical pulse-icon"></i>
+            <h2>Medicose<span>+</span></h2>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <h2><i class="fa-solid fa-briefcase-medical"></i> Medicose<span>+</span></h2>
+        </a>
+        
+        <div class="mobile-nav-group">
+            <a href="cart.html" class="mobile-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="mobile-cart-badge">0</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+            <div class="mobile-drawer-header">
+                <h2>Medicose<span>+</span> Menu</h2>
+                <i class="fa-solid fa-xmark close-menu" id="close-menu"></i>
+            </div>
+            
+            <ul class="nav-menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="cosmetic-creams.html" class="active">Cosmetics</a></li>
+                <li><a href="medicated-creams.html">Medicated</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="cart.html" class="desktop-cart-btn">
+                <i class="fa-solid fa-bag-shopping"></i> Cart 
+                <span class="cart-badge" id="desktop-cart-badge">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <section style="background: var(--dark); padding: 60px 5%; text-align: center; color: white;">
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800;">Beauty & <span style="color: var(--primary);">Cosmetics</span></h1>
+        <p style="color: #cbd5e1; margin-top: 10px;">Premium skincare and beauty products from global brands.</p>
+    </section>
+
+    <section class="products-section" style="padding: 60px 5%; min-height: 70vh; background: #f8fafc;">
+        <div class="product-grid" id="product-container" data-category="cosmetic-creams">
+        </div>
+    </section>
+
+    <footer class="mega-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-briefcase-medical"></i> Medicose<span>+</span></h3>
+                <p>Leading the way in digital healthcare. We provide 100% authentic products with express global delivery.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="medicines.html">Medicines</a></li>
+                    <li><a href="cosmetic-creams.html">Cosmetics</a></li>
+                    <li><a href="medicated-creams.html">Medicated</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Global HQ</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Peshawar, Pakistan</li>
+                    <li><i class="fa-solid fa-phone"></i> +92 300 1234567</li>
+                    <li><i class="fa-solid fa-envelope"></i> support@medicose.pk</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Medicose+. All Rights Reserved.</p>
+            <p class="agency-credit">Developed by <strong style="color: #0ea5e9;">Movonix Solutions</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

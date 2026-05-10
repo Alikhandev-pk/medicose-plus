@@ -1,0 +1,48 @@
+/* Hide menu toggle on desktop */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile & Tablet Styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        left: 0; /* Slide in menu */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
